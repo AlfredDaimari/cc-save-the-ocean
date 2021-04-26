@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.anim-spin {
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  transition: linear;
+}
+
+.anim-spin-1 {
+  animation-duration: 2s;
+  animation-delay: 100ms;
+}
+
+.anim-spin-2 {
+  animation-duration: 3s;
+  animation-delay: 200ms;
+}
+
+.anim-spin-3 {
+  animation-duration: 2.7s;
+  animation-delay: 300ms;
+}
+
+.anim-spin-4 {
+  animation-duration: 3.3s;
+  animation-delay: 750ms;
+}
+
+.anim-spin-5 {
+  animation-duration: 3s;
+  animation-delay: 550ms;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
