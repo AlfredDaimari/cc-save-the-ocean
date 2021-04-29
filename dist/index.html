@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seaspiracy</title>
+    <meta name="description" content="Please Help Save Our Oceans" />
+  </head>
+  <body class="overflow-hidden">
+    <!-- boxes for hover containers and picture containers -->
+    <a
+      class="absolute h-4 w-4 bg-transparent rounded-full animate-ping border-white border-2 border-dashed z-20 hidden hover:bg-blue-800 hover:border-blue-400 cursor-pointer"
+      id="hover-box-1"
+      target="_blank"
+    ></a>
+    <a
+      class="absolute h-3 w-3 bg-transparent rounded-full animate-ping border-white border-2 border-dashed z-20 hidden hover:bg-blue-800 hover:border-blue-400 cursor-pointer"
+      id="hover-box-2"
+      target="_blank"
+    ></a>
+    <a
+      class="absolute h-3 w-3 bg-transparent rounded-full animate-ping border-white border-2 border-dashed z-20 hidden hover:bg-blue-800 hover:border-blue-400 cursor-pointer"
+      id="hover-box-3"
+      target="_blank"
+    ></a>
+    <img
+      class="absolute drop-shadow-2xl max-h-80 max-w-xs z-10 hidden rounded-lg"
+      id="pic-box-1"
+    />
+    <img
+      class="absolute drop-shadow-2xl max-h-80 max-w-xs z-10 hidden rounded-lg"
+      id="pic-box-2"
+    />
+    <img
+      class="absolute drop-shadow-2xl max-h-80 max-w-xs z-10 hidden rounded-lg"
+      id="pic-box-3"
+    />
+
+    <!-- surface water -->
+    <div
+      class="h-screen bg-blue-700 z-30 relative transition ease-in-out duration-1000 overflow-hidden"
+      id="main"
+    >
+      <p class="font-serif ml-4 mt-4 pointer-events-none text-white text-xs">
+        click on coins to collect
+      </p>
+      <p class="font-serif ml-4 pointer-events-none text-white text-xs">
+        click to go underwater
+      </p>
+    </div>
+
+    <!-- underwater canvas -->
+    <div
+      class="absolute top-0 left-0 z-0 overflow-hidden w-auto h-auto"
+      style="background-image: url(underground.png)"
+    >
+      <p
+        class="absolute font-serif ml-4 mt-4 pointer-events-none text-white text-xs"
+      >
+        circles are clickable when shoals > 3
+      </p>
+      <canvas class="bg-transparent" id="underwater"></canvas>
+    </div>
+
+    <!-- scoreboard, shoal display -->
+    <div class="absolute top-8 z-50 flex flex-col w-full items-end">
+      <div
+        class="flex items-center border-b-2 border-solid border-green-300 w-auto mr-14 px-2 shadow-2xl"
+      >
+        <div
+          class="h-5 w-5 mr-2 bg-yellow-400 text-white anim-spin anim-spin-3 text-center text-xs rounded-full pointer-events-none"
+        >
+          &dollar;
+        </div>
+        <p class="text-white text-lg font-serif" id="scoreboard">Score:0</p>
+      </div>
+      <p
+        class="text-xs text-white mr-14 px-2 font-serif font-light"
+        id="shoal-info"
+      >
+        Shoals:0
+      </p>
+    </div>
+    <!-- ship div container -->
+    <div
+      class="absolute p-2 rounded-full bg-transparent z-50 border border-solid border-blue-50 animate-pulse transition duration-700"
+      id="ship"
+    >
+      <div style="font-size: 5px" id="shipy"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
