@@ -235,16 +235,16 @@ main_div.addEventListener("click", () => {
     hoverBx3.href = links[Math.floor(Math.random() * links.length)];
 
     //postions for the picture containers
-    pic1.style.left = temp_positions[0]["x"] + 10 + "px";
-    pic1.style.top = temp_positions[0]["y"] + 10 + "px";
+    pic1.style.left = temp_positions[0]["x"] + "px";
+    pic1.style.top = temp_positions[0]["y"] + "px";
     pic1.src = pics[Math.floor(Math.random() * pics.length)];
 
-    pic2.style.left = temp_positions[1]["x"] + 10 + "px";
-    pic2.style.top = temp_positions[1]["y"] + 10 + "px";
+    pic2.style.left = temp_positions[1]["x"] + "px";
+    pic2.style.top = temp_positions[1]["y"] + "px";
     pic2.src = pics[Math.floor(Math.random() * pics.length)];
 
-    pic3.style.left = temp_positions[2]["x"] + 10 + "px";
-    pic3.style.top = temp_positions[2]["y"] + 10 + "px";
+    pic3.style.left = temp_positions[2]["x"] + "px";
+    pic3.style.top = temp_positions[2]["y"] + "px";
     pic3.src = pics[Math.floor(Math.random() * pics.length)];
   }
 });
@@ -273,25 +273,25 @@ under_canvas.addEventListener("click", () => {
 event listeners for the picture containers 
 */
 hoverBx1.addEventListener("mouseenter", () => {
-  pic1.classList.remove("hidden");
+  pic1.classList.remove("opacity-0");
 });
 
 hoverBx1.addEventListener("mouseout", () => {
-  pic1.classList.add("hidden");
+  pic1.classList.add("opacity-0");
 });
 
 hoverBx2.addEventListener("mouseenter", () => {
-  pic2.classList.remove("hidden");
+  pic2.classList.remove("opacity-0");
 });
 
 hoverBx2.addEventListener("mouseout", () => {
-  pic2.classList.add("hidden");
+  pic2.classList.add("opacity-0");
 });
 
 hoverBx3.addEventListener("mouseenter", () => {
-  pic3.classList.remove("hidden");
+  pic3.classList.remove("opacity-0");
 });
 
 hoverBx3.addEventListener("mouseout", () => {
-  pic3.classList.add("hidden");
+  pic3.classList.add("opacity-0");
 });
