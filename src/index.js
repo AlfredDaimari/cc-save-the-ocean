@@ -70,6 +70,18 @@ const pics = [
   "p5.jpg",
   "p6.png",
   "p7.jpg",
+  "p8.jpg",
+  "p9.png",
+  "p10.jpg",
+  "p11.jpg",
+  "p12.jpg",
+  "p13.jpg",
+  "p14.jpg",
+  "p15.jpg",
+  "p16.jpg",
+  "p17.jpg",
+  "p18.jpg",
+  "p19.jpg",
 ];
 
 //links to support claim
@@ -82,6 +94,7 @@ const links = [
   "https://seashepherd.org/donate/",
   "https://www.netflix.com/title/81014008",
   "https://theoceancleanup.com/",
+  "https://www.usgs.gov/news/what-drag-global-impact-bottom-trawling#:~:text=Trawling%20destroys%20the%20natural%20seafloor,root%20systems%20or%20animal%20burrows.",
 ];
 
 /*
